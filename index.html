@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>pagina</title>
+</head>
+<body>
+    <div class="head"> 
+        <nav class="navbar">
+            <a href="#Inicio">Inicio</a>
+            <a href="#Informacion">Informacion</a>
+            <a href="#Fotos">Fotos</a>
+            <a href="#Mensaje">Mensaje</a>
+        </nav>
+
+    </div>
+
+    <header class="content header" id ="Inicio">
+        <h2 class="title">Inicio</h2>
+       <p>
+        Esta pagina esta dirigida a todos esos Gutemaltecos que les gusta el cin y la musica, estos tres personajes Gutemaltecos comparten estas dos caracteristicas en comun, la musica y la actuacion.</p>
+       <div class="btn-home">
+       </div>
+
+    </header>
+
+    <section class="content informacion" id ="Informacion">
+        <h2 class="title">Informacion</h2>
+        <p> En este apartado te estaremos dando informacion sobre 3 personajes importantes que destacaron en Guatemala</p>
+        <div class="box-container">
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>Osacar Isaac</h3>
+                <p> Es un actor y productor de cine guatemalteco. Nació en la Ciudad de Guatemala, de padre cubano, Óscar Gonzalo Hernández, y madre guatemalteca, María Eugenia Estrada Nicolle. 
+                    Entre sus papeles más relevantes se encuentran Poe Dameron, en la serie de películas de Star Wars y sus papeles principales en Inside Llewyn Davis (2013)                    
+                    </p>
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>Ricardo Arjona</h3>
+                <p>Es un músico, cantautor, arreglista, actor y productor musical guatemalteco. Su estilo musical varía desde baladas a pop latino, rock, pop rock, música cubana, entre otros. Ha vendido más de 80 millones de copias de discos a lo largo de su carrera.1 Es considerado uno de los artistas más exitosos en Hispanoamérica</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>Gaby Moreno</h3>
+                <p> Cantante Guatemalteca conocida profesionalmente como Gaby Moreno, es una cantautora y guitarrista guatemalteca. Su música abarca desde Blues, Jazz, Soul a R&B. También canta en inglés, francés y portugués.1
+                    En 2013, grabó covers de las populares canciones «Kiss of Fire» y «The Weed Smoker's Dream» con Hugh Laurie para su álbum Didn't It Rain. 
+
+        </div>
+
+    </section>
+
+    <section class="content Fotos" id ="Fotos">
+
+        <section class="content Fotos">
+            <h2 class="title">Fotos</h2>
+            <div class="carousel-container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <!-- Add more indicators as needed -->
+                </ul>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/osacr2.png" alt="Team Member 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/ricardo.png" alt="Team Member 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gaby.png" alt="Team Member 3">
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+        
+           
+
+    </section>
+
+    <section class="content Mensaje" id ="Mensaje">
+        <article class="contain">
+            <h2 class="title">Mensaje</h2>
+            <form action="procesar_mensaje.php" method="post">
+                <label for="destinatario">Selecciona un destinatario:</label>
+                <select name="destinatario" id="destinatario">
+                    <option value="Ricardo">Ricardo Arjona</option>
+                    <option value="Oscar">Oscar Isaac</option>
+                    <option value="Gaby">Gaby Moreno</option>
+                </select>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" rows="8" cols="50" placeholder="Escribe tu mensaje"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+        </article>
+       
+
+    </section>
+
+
+</body>
+</html>

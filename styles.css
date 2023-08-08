@@ -1,0 +1,164 @@
+
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    margin-right:10px ;
+}
+
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #3f3f3f;
+
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 60vh;
+    background: url(images/bandera.avif) no-repeat center;
+    background-size: cover;
+}
+
+.title{
+    
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+p{
+    margin-bottom:40px ;
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10% 40px;
+    border: 2px solid #1f1d1d;
+    color: #1f1d1d;
+    text-decoration: none;
+    background: #cecbcf;
+}
+
+.btn:hover{
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.informacion {
+    padding: 30px;
+    background: #1f1d1d;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 1rem;
+}
+
+.box-container .box h3{
+    font-size: 10px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p {
+    padding: 0 5px;
+    font-size: 16px;
+    
+}
+
+.Fotos {
+    background: #cecbcf;
+
+
+    
+}
+
+.Mensaje {
+    background: url(images/cont2.avif) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
